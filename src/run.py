@@ -9,6 +9,8 @@ from init import client, TOKEN
 import events
 from commandsSlash import Commandes
 from _help import HelpCommand
+import nest_asyncio
+nest_asyncio.apply()
 
 if __name__ == "__main__":
     try:

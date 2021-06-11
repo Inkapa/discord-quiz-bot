@@ -1,7 +1,7 @@
 {
   "_instructions": "Pour récupérer votre token veuillez créer un bot via https://discord.com/developers/applications puis naviguez sur l'onglet 'Bot' et cliquez sur 'copiez le token'",
   "configuration": {
-    "token": "token",
+    "token": "",
     "emplacement_bd": "../Database/DiscordBot.db",
     "prefix_bot": "-",
     "id_guilds": [
