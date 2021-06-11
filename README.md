@@ -181,7 +181,7 @@ organisé malgré tout, et ce jusqu'à la fin du projet.
 
 # Auteurs
 
-Liam (corn0050), Sufyan (suf0050), Lucas (lele0015), Mathis (jung0050), Jules (guya), Sebastien (nico0057)
+Liam (corn0050), Sufyan (ait-0033), Lucas (lele0015), Mathis (jung0013), Jules (guya0012), Sebastien (nico0057)
 
 # License
 
