@@ -2,7 +2,7 @@
   <img src="https://cdn.discordapp.com/avatars/847830349060636682/c82344f7811d55d4d8fe67dc2680c88b.webp">
   <h1> Projet - Bot de Quiz </h1>
 </div>
-<hr>
+
 <div align="center">
   <a href="https://www.python.org/downloads/">
     <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/Red-Discordbot">
@@ -28,7 +28,7 @@
   •
   <a href="#structure-bd">Structure BD</a>
   •
-  <a href="#conception---interactions">Conception</a>
+  <a href="#conception">Conception</a>
   •
   <a href="#conclusion">Conclusion</a>
   •
@@ -166,7 +166,7 @@ A noter que la base de donnée du bot s'auto-génère, il n'est donc pas nécess
 
 **Pour re-initialiser la BD**, il suffit de supprimer le fichier `.bd` (par défaut `./Database/DiscordBot.db`). Une nouvelle BD vide sera générée lors de l'execution du bot.
 
-# Conception - Interactions
+# Conception
 
 Représentation simpliste via des Use-Case UML:
 ![](https://cowboy.bebop.gg/i/Bhlo.png)
@@ -176,12 +176,17 @@ Représentation détaillée *(merci Seb 👍)*
 
 # Conclusion
 Nous avons trouver ce projet très amusant, bien qu'il ai été plus difficile que premièrement imaginé.
-Nous avons dû changer de structure de BD et d'organisation à multiples reprises mais nous avons au final sû rester 
-organisé malgré tout, et ce jusqu'à la fin du projet.
+Nous avons dû changer la structure de la BD et notre organisation à multiples reprises lors du développement, et ce bien que nous avions réalisé la structure de la BD à l'avance en Merise. 
+Mais nous avons au final sû rester organisé malgré tout, et ce jusqu'à la fin du projet à l'aide d'un planning prévisionnel solide *(merci Sufyan)*.
 
 # Auteurs
 
-Liam (corn0050), Sufyan (ait-0033), Lucas (lele0015), Mathis (jung0013), Jules (guya0012), Sebastien (nico0057)
+- Liam (corn0050)
+- Sufyan (ait-0033)
+- Lucas (lele0015)
+- Mathis (jung0013)
+- Jules (guya0012)
+- Sebastien (nico0057)
 
 # License
 
