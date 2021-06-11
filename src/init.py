@@ -9,28 +9,20 @@ import discord
 from discord.ext import commands
 from pathlib import Path
 from discord_slash import SlashCommand
-from discord_slash.utils.manage_commands import create_permission
 from createDB import checkDB
 import json
 
-# Ouvre le fichier de configuration
-with open('../Configuration/conf.json', mode='r') as confFile:
-    configuration = json.load(confFile)
-
 try:
+    # Ouvre le fichier de configuration
+    with open('../Configuration/conf.json', mode='r') as confFile:
+        configuration = json.load(confFile)
+    
     # Récupère le chemin du fichier de base de donnée
     sourceDb = Path(str(configuration['configuration']['emplacement_bd']))
     # Récupère les ids des serveurs
-    guild_ids = list(map(int, configuration["configuration"]["id_guilds"].keys()))
+    guild_ids = configuration["configuration"]["id_guilds"]
     if not guild_ids:
-        raise Exception("Vous n'avez pas spécifié de guilds, veuillez ajouter une liste d'identifiants de serveurs dans le fichier de configuration")
-    # Génère les permissions
-    permission = {}
-    for key, value in configuration["configuration"]["id_guilds"].items():
-        if value:
-            permission[int(key)] = [create_permission(int(value), 1, True), create_permission(int(key), 1, False)]
-        else:
-            print(f"[ WARNING ] Le serveur {key} n'a pas spécifié de rôle administrateur. Tout les utilisateurs auront accès à toutes les commandes")
+        print("[ WARNING ] Vous n'avez pas spécifié de guilds, si ceci est votre premier lancement du bot, les commandes pourront prendre jusqu'à 1 heure avant d'apparaître.")
     # Vient vérifier la présence du fichier de BD. Si il est absent, il l'auto-génère 
     checkDB(sourceDb)
     # Récupère le token Discord

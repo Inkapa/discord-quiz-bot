@@ -13,6 +13,7 @@ from database import Quiz, Question, Choix, Utilisateur
 import aiosqlite 
 
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
+
 async def createEmbed(desc: str, ctx: SlashContext = None, quiz: Quiz = None, question: Question = None, bonneRéponse: Choix = None) -> discord.Embed:
     """Fonction qui permet la création d'embed Discord pour un Question d'un quiz
     
@@ -57,6 +58,8 @@ async def createEmbed(desc: str, ctx: SlashContext = None, quiz: Quiz = None, qu
         embed.set_author(name="Question annulée", icon_url=ctx.author.avatar_url)
     return embed
 
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
+
 async def quizEmbed(ctx: SlashContext, personal: bool, quizCount: int, user: Utilisateur, db: aiosqlite.core.Connection, page: int, pages: int, offset: int = 0) -> discord.Embed:
     """ Fonction qui créer un embed listant les quizs disponibles
     
@@ -85,7 +88,7 @@ async def quizEmbed(ctx: SlashContext, personal: bool, quizCount: int, user: Uti
         embed.set_author(name="Il y a " + str(quizCount) + ' quizs disponibles', icon_url=ctx.author.avatar_url)
 
     embed.set_thumbnail(url="https://media.discordapp.net/attachments/846496626558500864/847844887847370752/Quiz.png?width=1145&height=670")
-    embed.set_footer(text=f"Utilisez ◀ et ▶ pour naviguer | Page {page}/{pages}", icon_url="https://cdn.discordapp.com/avatars/847830349060636682/c82344f7811d55d4d8fe67dc2680c88b.webp")
+    embed.set_footer(text=f"Utilisez ◀ et ▶ pour naviguer | Page {page}/{max(pages,1)}", icon_url="https://cdn.discordapp.com/avatars/847830349060636682/c82344f7811d55d4d8fe67dc2680c88b.webp")
     embed.add_field(name=":arrow_right: __[Id du Quiz] - Titre du quiz__", value="\u200b", inline=False)
     for quiz in quizs:
         idQuiz = await quiz.getIdQuiz()
@@ -97,6 +100,8 @@ async def quizEmbed(ctx: SlashContext, personal: bool, quizCount: int, user: Uti
             embed.add_field(name=f"**[ {idQuiz} ]** - {quizTitle}", value="Nombre de points: " + str(await quiz.getPoints()), inline=False)       
     embed.add_field(name="\u200b", value="Vous pouvez utiliser `/addQuestion` pour ajouter des questions à votre quiz ou `/launchQuiz` pour lancer une game d'un quiz")
     return embed
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 
 async def recapEmbed(ctx: SlashContext, quiz: Quiz, idQuestion: int, nbQuestions: int, db: aiosqlite.core.Connection) -> discord.Embed:
     """Fonction qui permet de créer un embed récapitulatif d'une question

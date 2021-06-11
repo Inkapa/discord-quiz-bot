@@ -9,6 +9,8 @@ from init import client, TOKEN
 import events
 from commandsSlash import Commandes
 from _help import HelpCommand
+import nest_asyncio
+nest_asyncio.apply()
 
 if __name__ == "__main__":
     try:
@@ -16,4 +18,4 @@ if __name__ == "__main__":
         client.add_cog(HelpCommand(client))
         client.run(TOKEN)
     except Exception as e:
-        print(f"[ ERROR ] Une erreure est survenue: {e}")
+        print(f"[ ERROR ] Une erreur est survenue: {e}")
