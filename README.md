@@ -24,9 +24,9 @@ de mettre en place et de gérer des quiz.
 Le bot, surnommé "Projet?", est un bot autonome capable de créer, lancer et gérer des quiz à partir de commandes
 Discord et de les lier à une base de données.
 
-Vous pouvez télécharger notre [Cahier Des Charges]()
+Vous pouvez télécharger notre [Cahier Des Charges](https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/Files/CahierDesCharges.docx)
 
-Ainsi que notre [Plan de Projet]() 
+Ainsi que notre [Plan de Projet](https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/Files/PlanDeProjet.pdf) 
 
 (malheureusement, dû aux limitations du logiciel que l'on nous a forcé à apprendre et à utiliser en cours, l'exportation du Diagramme de Gantt pose certains problèmes de qualité visuelle)
 
