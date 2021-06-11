@@ -50,7 +50,7 @@ async def on_guild_join(guild):
                 try:
                     if role not in log.user.roles:
                         await log.user.add_roles(role)
-                    embed = discord.Embed(title="Quiz Bot a rejoint votre serveur!", colour=discord.Colour(0x1ABC9C), description="Bonjour! Un nouveau role a été ajouté à votre serveur: ```json\n\"\n@Projet Quiz Master\n\"```Le rôle vous a automatiquement été ajouté. Ajoutez ce rôle à un utilisateur pour lui donner la permission de créer et initialiser des quiz.\n\nPour vous lancer dans l'utilisation du bot, n'hesitez pas à regarder notre page 'Getting Started' sur github ou a utiliser la commande: ```/help```", timestamp=datetime.today())
+                    embed = discord.Embed(title="Quiz Bot a rejoint votre serveur!", colour=discord.Colour(0x1ABC9C), description="Bonjour! Un nouveau role a été ajouté à votre serveur: ```json\n\"\n@Projet Quiz Master\n\"```Le rôle vous a automatiquement été ajouté. Ajoutez ce rôle à un utilisateur pour lui donner la permission de créer et initialiser des quiz.\n\nPour vous lancer dans l'utilisation du bot, n'hesitez pas à regarder notre README sur gitlab ou a utiliser la commande: ```/help```", timestamp=datetime.today())
                     embed.set_thumbnail(url="https://media.discordapp.net/attachments/846496626558500864/847844887847370752/Quiz.png?width=1145&height=670")
                     embed.set_author(name="Introduction", icon_url=log.user.avatar_url)
                     await log.user.send(log.user.mention, embed=embed)
@@ -58,7 +58,7 @@ async def on_guild_join(guild):
                     print(f"[ ERROR ] On join {e}")
                     for channel in guild.text_channels:
                         if channel.permissions_for(guild.me).send_messages:
-                            embed = discord.Embed(title="Quiz Bot a rejoint votre serveur!", colour=discord.Colour(0x1ABC9C), description="Bonjour! Je n'ai pas réussi à vous contacter par MP le message est par conséquent envoyé ici.\nUn nouveau role a été ajouté à votre serveur: ```json\n\"\n@Projet Quiz Master\n\"```Ajoutez ce rôle à un utilisateur pour lui donner la permission de créer et initialiser des quiz.\n\nPour vous lancer dans l'utilisation du bot, n'hesitez pas à regarder notre page 'Getting Started' sur github ou a utiliser la commande: ```/help```", timestamp=datetime.today())
+                            embed = discord.Embed(title="Quiz Bot a rejoint votre serveur!", colour=discord.Colour(0x1ABC9C), description="Bonjour! Je n'ai pas réussi à vous contacter par MP le message est par conséquent envoyé ici.\nUn nouveau role a été ajouté à votre serveur: ```json\n\"\n@Projet Quiz Master\n\"```Ajoutez ce rôle à un utilisateur pour lui donner la permission de créer et initialiser des quiz.\n\nPour vous lancer dans l'utilisation du bot, n'hesitez pas à regarder notre README sur gitlab ou a utiliser la commande: ```/help```", timestamp=datetime.today())
                             embed.set_thumbnail(url="https://media.discordapp.net/attachments/846496626558500864/847844887847370752/Quiz.png?width=1145&height=670")
                             embed.set_author(name="Introduction", icon_url=log.user.avatar_url)
                             await channel.send(log.user.mention, embed=embed)
