@@ -12,7 +12,7 @@
   <a href="https://github.com/Rapptz/discord.py/">
      <img src="https://img.shields.io/badge/discord-py-blue.svg" alt="discord.py">
   </a>
-  <a href="https://iut-info.univ-reims.fr/gitlab/corn0050/projet-s2/LICENSE">
+  <a href="https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/LICENSE">
     <img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg">
   </a>
 </p>
