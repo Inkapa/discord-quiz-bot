@@ -190,4 +190,4 @@ Mais nous avons au final sû rester organisé malgré tout, et ce jusqu'à la fi
 
 # License
 
-Ce projet est sous license [MIT](LICENSE.md).
+Ce projet est sous license [MIT](LICENSE).
