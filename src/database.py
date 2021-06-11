@@ -11,6 +11,10 @@ import aiosqlite
 
 # La docstring a été écrite en suivant les normes Google https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-docstrings
 
+# On aurait pu séparer chaque classe dans son propre fichier. Mais pour des raisons de simplification d'importation
+# et pour éviter des problèmes d'import circulaires, j'ai décidé de tout mettre dans un même fichier
+
+
 class Utilisateur(object):
     """Classe d'instance de la table Utilisateur
     
