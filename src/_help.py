@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Tue Jun  8 14:48:12 2021
+
+@author: Liam
+"""
 
 from init import guild_ids
 from discord_slash import cog_ext
