@@ -55,7 +55,7 @@ Si vous n'avez jamais utilisé de bots auparavant, il vous faudra créer un bot 
 
 Assurez vous d'avoir activer les `Privileged Gateway Intents` sur l'onglet `Bot` du site ci-dessus. Ce a quoi cela doit ressembler:
 
-![](https://cowboy.bebop.gg/i/4Ynv.png)
+![](https://i.imgur.com/f8qKrr2.png)
 
 Il suffit ensuite de configurer le bot via le fichier de configuration `conf.json` dans le repertoire `Configuration`.
 
@@ -94,7 +94,7 @@ Ce rôle peut être attribué à tout utilisateur pour lui donner la permission 
 Le bot vient pre-configuré avec différentes commandes documentées. Les commandes, sous format de commandes slash `/command`, bénéficient
 de l'autocomplétion Discord. Tapez `/` dans votre barre de message pour avoir une vue globale des fonctionnalités.
 
-![](https://cowboy.bebop.gg/i/BHi7.png)
+![](https://i.imgur.com/VNb3nuH.png)
 
 Voici un récapitulatif des commandes disponibles :
 
@@ -150,9 +150,9 @@ Permet d'afficher les quiz créés par l'utilisateur ou de récupérer l'entièr
 
 Pour faire plaisir à Mme. Sandron, voici une représentation sous forme de MCD et MLD de la structure de ma base de données.
 
-![](https://cowboy.bebop.gg/i/Bck2.png)
+![](https://i.imgur.com/PTk8LSQ.png)
 
-![](https://cowboy.bebop.gg/i/B7Xi.png)
+![](https://i.imgur.com/FupvTcy.png)
 
 
 
@@ -163,10 +163,10 @@ A noter que la base de donnée du bot s'auto-génère, il n'est donc pas nécess
 # Conception
 
 Représentation simpliste via des Use-Case UML:
-![](https://cowboy.bebop.gg/i/Bhlo.png)
+![](https://i.imgur.com/qPHvjYX.png)
 
 Représentation détaillée
-![](https://media.discordapp.net/attachments/849645424167616532/850366679581982720/unknown.png?width=1367&height=676)
+![](https://i.imgur.com/VWAWe1p.png)
 
 # Conclusion
 J'ai trouvé ce projet très amusant, bien qu'il ai été plus difficile que premièrement imaginé.
