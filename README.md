@@ -10,7 +10,7 @@
   <a href="https://github.com/Rapptz/discord.py/">
      <img src="https://img.shields.io/badge/discord-py-blue.svg" alt="discord.py">
   </a>
-  <a href="https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/LICENSE">
+  <a href="https://github.com/Inkapa/discord-quiz-bot/blob/master/LICENSE">
     <img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg">
   </a>
 </div>
@@ -42,7 +42,7 @@ de mettre en place et de gérer des quiz.
 Le bot, surnommé "Projet?", est un bot autonome capable de créer, lancer et gérer des quiz à partir de commandes
 Discord et de les lier à une base de données.
 
-Vous pouvez télécharger le [Cahier Des Charges](https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/Files/CahierDesCharges.docx)
+Vous pouvez télécharger le [Cahier Des Charges](https://github.com/Inkapa/discord-quiz-bot/blob/master/Files/CahierDesCharges.docx?raw=true)
 
 # Installation
 
