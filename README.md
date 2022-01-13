@@ -32,23 +32,17 @@
   •
   <a href="#conclusion">Conclusion</a>
   •
-  <a href="#auteurs">Auteurs</a>
-  •
   <a href="#license">License</a>
 </div>
 
 # Presentation
-Pour notre projet de fin d'année en Informatique à l'IUT de Reims, nous avons décidé de réaliser un bot discord capable 
+Pour ce projet de fin d'année en Informatique à l'IUT de Reims, j'ai décidé de réaliser un bot discord capable 
 de mettre en place et de gérer des quiz.
 
 Le bot, surnommé "Projet?", est un bot autonome capable de créer, lancer et gérer des quiz à partir de commandes
 Discord et de les lier à une base de données.
 
-Vous pouvez télécharger notre [Cahier Des Charges](https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/Files/CahierDesCharges.docx)
-
-Ainsi que notre [Plan de Projet](https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/Files/PlanDeProjet.pdf) 
-
-*(malheureusement, dû aux limitations du logiciel que l'on nous a forcé à apprendre et à utiliser en cours, l'exportation du Diagramme de Gantt pose certains problèmes de qualité visuelle)*
+Vous pouvez télécharger le [Cahier Des Charges](https://iut-info.univ-reims.fr/gitlab/corn0050/projet/-/blob/master/Files/CahierDesCharges.docx)
 
 # Installation
 
@@ -154,7 +148,7 @@ Permet d'afficher les quiz créés par l'utilisateur ou de récupérer l'entièr
 
 **ATTENTION: Le bot utilise SQLite pour la base de données. Assurez-vous que SQLite (v.3.35 minimum) est installé sur votre machine**
 
-Pour faire plaisir à Mme. Sandron, voici une représentation sous forme de MCD et MLD de la structure de notre base de données.
+Pour faire plaisir à Mme. Sandron, voici une représentation sous forme de MCD et MLD de la structure de ma base de données.
 
 ![](https://cowboy.bebop.gg/i/Bck2.png)
 
@@ -171,22 +165,13 @@ A noter que la base de donnée du bot s'auto-génère, il n'est donc pas nécess
 Représentation simpliste via des Use-Case UML:
 ![](https://cowboy.bebop.gg/i/Bhlo.png)
 
-Représentation détaillée *(merci Seb 👍)*
+Représentation détaillée
 ![](https://media.discordapp.net/attachments/849645424167616532/850366679581982720/unknown.png?width=1367&height=676)
 
 # Conclusion
-Nous avons trouver ce projet très amusant, bien qu'il ai été plus difficile que premièrement imaginé.
-Nous avons dû changer la structure de la BD et notre organisation à multiples reprises lors du développement, et ce bien que nous avions réalisé la structure de la BD à l'avance en Merise. 
-Mais nous avons au final sû rester organisé malgré tout, et ce jusqu'à la fin du projet à l'aide d'un planning prévisionnel solide *(merci Sufyan)*.
-
-# Auteurs
-
-- Liam (corn0050)
-- Sufyan (ait-0033)
-- Lucas (lele0015)
-- Mathis (jung0013)
-- Jules (guya0012)
-- Sebastien (nico0057)
+J'ai trouvé ce projet très amusant, bien qu'il ai été plus difficile que premièrement imaginé.
+J'ai dû changer la structure de la BD et mon organisation à multiples reprises lors du développement, et ce bien que j'ai réalisé la structure de la BD à l'avance en Merise. 
+Mais j'ai au final sû rester organisé malgré tout, et ce jusqu'à la fin du projet à l'aide d'un planning prévisionnel solide *(merci Sufyan)*.
 
 # License
 
